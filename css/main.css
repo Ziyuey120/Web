@@ -36,13 +36,15 @@ a {
 }
 
 #logo {
-  font-weight: 900;
-  font-size: 2rem;
+  font-weight: bold;
+  font-size: 2.5rem;
   color: black;
   border-radius: 7px;
   display: flex;
   justify-content: center;
-  padding-left: 15%;
+  padding-left: 0;
+  margin: 0;
+  flex: 1;
 }
 
 ul {
@@ -52,11 +54,14 @@ ul {
   gap: 2rem;
 }
 
-nav {
+.navbar {
+  background-color: rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 nav a {
@@ -64,7 +69,18 @@ nav a {
   font-weight: 600;
 }
 nav a:hover {
-  color: blueviolet;
+  color: rgb(5, 70, 15);
+}
+
+.nav-icons {
+  justify-items: flex-end;
+  margin-right: 30px;
+}
+
+.nav-icons img {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
 }
 
 /*Main*/
@@ -122,7 +138,7 @@ footer {
 
 /*Flowers*/
 
-img {
+.category-container img {
   width: 70%;
   height: 400px;
   display: block;
@@ -143,7 +159,7 @@ figure:hover {
   box-shadow: 5px rgba(0, 0, 0, 0.15);
 }
 
-figurecaption {
+figcaption {
   font-size: 1.2rem;
   font-weight: 500;
 }
@@ -159,4 +175,18 @@ h2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+}
+
+.product figcaption {
+  text-align: left;
+  width: 100%;
+  padding-top: 8px;
+  margin-left: 60px;
+}
+
+.price {
+  font-size: 15px;
+  display: block;
+  text-align: left;
+  margin-top: 5px;
 }
