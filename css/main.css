@@ -42,7 +42,7 @@ a {
   border-radius: 7px;
   display: flex;
   justify-content: center;
-  padding-left: 0;
+  padding-right: 180px;
   margin: 0;
   flex: 1;
 }
@@ -165,6 +165,11 @@ figcaption {
 }
 
 h2 {
+  margin-top: 5%;
+}
+
+h2,
+h3 {
   color: rgb(101, 86, 65);
   display: flex;
   justify-content: flex-start;
@@ -189,4 +194,58 @@ h2 {
   display: block;
   text-align: left;
   margin-top: 5px;
+}
+
+/*Product detailes*/
+
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+}
+
+.product-info h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.money {
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+.add {
+  background-color: seashell;
+  color: black;
+  padding: 14px;
+  margin-top: 20px;
+  border: none;
+  width: 400px;
+  height: 60px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.add:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+.description {
+  margin-top: 50px;
+  line-height: 1.6;
+}
+
+.details {
+  margin-top: 50px;
+  color: #555;
 }
