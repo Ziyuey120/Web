@@ -85,6 +85,11 @@ nav a:hover {
 
 /*Main*/
 
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
 main {
   display: block;
   justify-items: auto;
@@ -248,4 +253,128 @@ h3 {
 .details {
   margin-top: 50px;
   color: #555;
+}
+
+/*Tips*/
+
+.conditions {
+  background-color: rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 10px 50px;
+  border-radius: 8px;
+}
+
+.conditions h2 {
+  margin-top: 0%;
+}
+
+.feature-tips {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+}
+
+.tips {
+  display: block;
+  margin: 5px 20px;
+}
+
+.tips li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 300;
+}
+
+/*Cart table*/
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-img {
+  width: 70%;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+button {
+  padding: 6px 10px;
+  cursor: pointer;
+  background-color: antiquewhite;
+  border: 0;
+}
+
+/*responsive design*/
+
+@media (max-width: 992px) {
+  .category-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .product-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .navbar ul {
+    gap: 20px;
+  }
+}
+
+/*mobile version*/
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+  }
+
+  #logo {
+    margin-left: 160px;
+  }
+
+  .category-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .product-contanier {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .product-info h1 {
+    font-size: 22px;
+  }
+
+  .product figcaption {
+    margin-left: 90px;
+  }
+
+  .add {
+    width: 100%;
+  }
+
+  table {
+    font-size: 14px;
+  }
 }
