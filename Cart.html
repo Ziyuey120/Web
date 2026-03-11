@@ -18,8 +18,8 @@
       <nav class="navbar">
         <ul>
           <li><a href="Index.html">Home</a></li>
-          <li><a href="Flowers.html">Flowers</a></li>
-          <li><a href="#">Garden Tips</a></li>
+          <li><a href="Products.html">Flowers</a></li>
+          <li><a href="Garden tips.html">Garden Tips</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
 
@@ -32,9 +32,28 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <h2>Your Cart</h2>
+
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody id="cart-items"></tbody>
+      </table>
+
+      <h3 id="cart-total">Total: $0</h3>
+    </main>
     <footer>
       <p>&copy; Your Garden 2026</p>
     </footer>
+
+    <script src="Js/Js.js"></script>
   </body>
 </html>
