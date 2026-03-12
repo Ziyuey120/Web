@@ -36,20 +36,23 @@ function displayCart() {
     let itemTotal = item.price * item.quantity;
     total += itemTotal;
 
-    row.innerHTML = `
+    row.innerHTML += `
+    <tr>
         <td>${item.name}</td>
         <td>$${item.price}</td>
 
-        <td>
-            <input type="number" min="1" value="${item.quantity}"
-            onchange="updateQuantity(${index}, this.value)">
-        </td>
+        <td class="quantity-control">
+        <button onclick="changeQuantity(${index},-1)">-</button>
+        <span>${item.quantity}</span>
+        <button onclick="changeQuantity(${index},1)">+</button>
+        </td>   
 
-        <td>$${itemTotal}</td>
+        <td>$${item.price * item.quantity}</td>
 
         <td>
             <button onclick="removeItem(${index})">Remove</button>
         </td>
+    </tr>
     `;
 
     cartItems.appendChild(row);
@@ -65,12 +68,14 @@ function displayCart() {
 }
 
 /*update quantity*/
-function updateQuantity(index, quantity) {
-  cart[index].quantity = parseInt(quantity);
+function changeQuantity(index, change) {
+  cart[index].quantity += change;
 
   if (cart[index].quantity <= 0) {
     cart.splice(index, 1);
   }
+
+  localStorage.setItem("cart", JSON.stringify(cart));
 
   displayCart();
 }
