@@ -12,7 +12,7 @@
   background-attachment: center;
   display: flex;
   flex-direction: column;
-  min-height: 80vh;
+  min-height: 100vh;
   margin: 0;
 }
 
@@ -20,7 +20,7 @@ body {
   background-color: antiquewhite;
   display: flex;
   flex-direction: column;
-  min-height: 80vh;
+  min-height: 100vh;
   margin: 0;
 }
 
@@ -91,6 +91,7 @@ p {
 }
 
 main {
+  flex: 1;
   display: block;
   justify-items: auto;
   align-items: center;
@@ -137,7 +138,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   padding: 10px;
 }
 
@@ -314,6 +314,24 @@ button {
   cursor: pointer;
   background-color: antiquewhite;
   border: 0;
+}
+
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.checkout {
+  margin-right: 110px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.checkout:hover {
+  color: rgb(5, 70, 15);
 }
 
 /*responsive design*/
