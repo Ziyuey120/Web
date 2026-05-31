@@ -17,20 +17,37 @@
     <header>
       <nav class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="../Products.html">Flowers</a></li>
-          <li><a href="../Garden tips.html">Garden Tips</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../products.html">Flowers</a></li>
+          <li><a href="../gardenTips.html">Garden Tips</a></li>
           <li><a>Contact</a></li>
         </ul>
 
         <p id="logo"><a href="index.html">Your Garden</a></p>
 
         <div class="nav-icons">
-          <a><img src="../Image/Account.jpg" alt="account" /></a>
-          <a><img src="../Image/Search.jpg" alt="search" /></a>
-          <a href="../Cart.html"><img src="../Image/Cart.png" alt="cart" /></a>
+          <a href="../account.html"
+            ><img src="../Image/Account.jpg" alt="account"
+          /></a>
+          <a id="searchBtn"><img src="../Image/Search.jpg" alt="search" /></a>
+          <a href="../cart.html"><img src="../Image/Cart.png" alt="cart" /></a>
         </div>
       </nav>
+
+      <div class="search-overlay" id="searchOverlay">
+        <div class="search-box">
+          <span id="closeSearch">&times;</span>
+          <h2>Search Flowers</h2>
+          <input type="text" placeholder="Type to search..." />
+
+          <div class="popular-searches">
+            <p>Popular Searches</p>
+            <button>Rose</button>
+            <button>Tulips</button>
+            <button>Wedding Bouquet</button>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main class="product-container">
@@ -72,6 +89,6 @@
       <p>&copy; Your Garden 2026</p>
     </footer>
 
-    <script src="../Js/Js.js"></script>
+    <script src="../Js/js.js"></script>
   </body>
 </html>
