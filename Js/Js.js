@@ -1,3 +1,18 @@
+/*search bar*/
+const searchBtn = document.getElementById("searchBtn");
+
+const overlay = document.getElementById("searchOverlay");
+
+const closeBtn = document.getElementById("closeSearch");
+
+searchBtn.addEventListener("click", () => {
+  overlay.style.display = "flex";
+});
+
+closeBtn.addEventListener("click", () => {
+  overlay.style.display = "none";
+});
+
 /*cart system*/
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
